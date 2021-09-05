@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wedding invitation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@200&family=Niconne&family=Roboto&family=Style+Script&display=swap" rel="stylesheet">
+
+</head>
+     <!-- whole body wrapper for flex -->
+<body id="body-wrapper">
+
+    <!-- form wrapper for flex -->
+    <div id="form-wrapper">
+
+        <div id = "form">
+               <!-- header -->
+            <h1 id = "header" style = "margin:24px 12px 12px 24px;">Lets style your invitation</h1>
+            <br>
+
+            <!-- names -->
+            <div class="inputBoxGroup">
+            <h4>Enter the couple's name</h4>
+            <span>Which name goes first? The bride or groom of the paying parent of the wedding, if it is split equally than alphabetically</span>
+            <br>
+            <label for="couple1name"></label>
+            
+            <br>
+            <label for="couple-1-name-input">Name one</label>
+            <input type='text' id='couple-1-name-input' class='nameinput' value="" maxlength="16" onkeyup="livetype()"><br>
+                <br>
+            <label for="couple-2-name-input">Name two</label><br>
+            <input type='text' id='couple-2-name-input' class='nameinput' value="" maxlength="16" onkeyup="livetype()">
+
+            
+            <br><br>
+            <hr class="rounded">
+        <!-- invite wording -->
+            <h4>Enter the invitation wording</h4>
+            <label for="invite-message-input">Type a message to your guests</label>
+            <input type='textarea' id='invite-message-input' value="" maxlength="250" onkeyup="livetype()">
+
+            </div>
+            
+        <!-- divider -->
+            <hr class="rounded">
+        
+         <!-- time date venue -->
+            <div class="inputBoxGroup">
+            <h4>Enter the wedding date & venue</h4>
+            <label for="datetime-local">Select your wedding date</label>
+            <input type="date" id="wedding-datetime-input" 
+            name="wedding-time-input" 
+            value="2021-08-30"
+            min="2021-08-31" max="2023-12-31">
+            <br><br>
+            <label for="venue-city-input">Venue name and city</label><br>
+            <input type="text" id="venue-city-input" name="venue-city-input" maxlength="50"><br><span></span>
+            </div>           
+
+            <button class="CTA" id="continue">Continue to payment</button>
+
+        </div>
+        
+    </div>
+
+<!-- paper -->
+<div id="invite-preview-wrapper">
+    
+    <!-- Livetype + live form containers -->
+    <div id="invite-preview-paper" class="cardStyle">
+        <div id="liveslice"></div>
+        <div id="couple-1-name-output" data-text=""></div>
+        <div id="couple-2-name-output" data-text=""></div>
+        <div id="invite-message-output"></div>                  
+        <div id="couple-2-name-output" data-text=""></div> 
+        <div id="wedding-datetime-output" data-text=""></div>
+        <div id="venue-city-output" data-text=""></div> 
+    </div>
+
+
+    <!-- change-font -->
+    <div id="styleChangeButtons">
+        <button id='bStyel1' class="bPreview" onclick="changeStyle('style1')"></button>
+
+        <button id='bStyel2' class="bPreview"  onclick="changeStyle('style2')"></button>
+      ​
+        <button id='bStyel3' class="bPreview"  onclick="changeStyle('style3')"></button>
+
+        <button id='bStyel4' class="bPreview"  onclick="changeStyle('style4')"></button>
+    </div>
+
+        </div>
+
+    </div>
+</div>    
+
+
+
+<script src="javascript.js">
+
+
+</script>   
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+html *
+{
+  margin: 0px;
+  padding: 0px;
+
+  background: none repeat scroll 0 0;
+
+  font-weight: 300;
+   font-size: 16px;
+   color: rgb(68, 68, 68);
+   
+}
+
+body{
+  min-width:80%;        
+  width: auto !important;
+  width:80%;
+}
+
+label, span
+{
+font-family: roboto, Helvetica,sans-serif;
+font-size: 12px;
+font-weight: 400;
+}
+
+h4
+{
+font-family:  Roboto,Helvetica,sans-serif;
+font-size: 16px;
+font-weight: 400;
+margin-bottom: 5px;
+}
+
+h1
+{
+font-family: Helvetica,sans-serif;
+font-weight: 400;
+font-size: 22px;
+margin: 24px 12px 2px 24px;
+color:#1d1d1d9a;
+}
+
+/*livetype*/
+#liveslice{
+  text-transform: capitalize;
+  text-align: center;
+  color:#9e870b;
+  font-size: 52px;
+  margin: 200px auto 30px;
+
+}
+
+#couple-1-name-output, #couple-2-name-output {
+text-transform: capitalize;
+text-align: center;
+font-size: 32px;
+margin:0px auto 15px;
+}
+
+#invite-message-output{
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  margin:0px auto 15px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+#wedding-datetime-output {
+  text-align: center;
+}
+
+#venue-city-output{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+/* Rounded border */
+hr.rounded {
+  border-top: .5px solid #bbb;
+  border-radius: 0.5px;
+  margin: 12px auto 12px auto;
+  width:220px;
+  
+}
+
+.inputBoxGroup, .dateinputBoxGroup {
+  margin: 4px 24px 0px 24px;
+  padding-bottom: 32px;
+}
+
+/* Container for everything */
+#body-wrapper { 
+  display: flex;
+}
+
+/* Container for form, and sizing */
+#form-wrapper { 
+  flex: 1 1 15%;
+  background: #fff;
+  box-shadow: 10px 0px 50px rgb(0 0 0 / 50%);
+  height: 100vh;
+  width: 100%;
+  /* min-width:200px; */
+}
+
+/* Container for preview, and sizing */
+#invite-preview-wrapper { 
+  flex: 1 1 85% ;
+  background: linear-gradient(1.3turn, #F9EEE7, #F9EEE2);
+  width: 100%;
+  height: 100vh;
+  
+}
+
+/* Container for card preview */
+#invite-preview-wrapper { 
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+}
+
+#invite-preview-paper { 
+  position:auto;
+  left:0;
+  right:0;
+  TOP:0;
+  bottom:0;
+  margin: auto;
+  width: 496px;
+  height: 592px;
+
+  box-shadow: 77px 73px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* preview style buttons */
+#styleChangeButtons {
+  display: flex;
+  flex-direction: column;
+  /* display: block; */
+  margin-top: Auto;
+  margin-bottom: Auto;
+  margin-left: 24px;
+  margin-right: 12px;
+}
+
+/* inputs */
+input {
+  font-family: Roboto, "Helvetica Ne"Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border-radius: 10px;
+
+  border: #444 1px solid;
+  min-width: 25ch;
+  max-width: 25ch;
+  }
+
+.invitemessage {
+  padding-top: 20px;
+
+}
+  
+input:focus {
+  border-radius: 10px;
+  border: 2px solid;
+  outline: none;
+  border-color:rgb(240, 204, 182);
+  background-color: rgb(249, 238, 231);
+  }
+
+  /* CTA */
+#continue {
+    margin: 24px 12px 12px 24px;
+    padding: 10px;
+    color: #ffff;
+    background-color: #444;
+    font-weight: 600;
+    border-radius: 2px;
+    width: 25ch;
+  
+}
+
+
+/* Stylechangebuttons */
+.bPreview {
+  position:center;
+  width: 56px;
+  height: 66px;
+  padding: 20;
+  margin:15px;
+  box-shadow: 5px 2px 5px rgb(0 0 0 / 20%);
+}
+
+.bPreview:hover {
+  transform: translateY(2px);
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  width: 67.2px;
+  height: 79.2px;
+}
+
+.bPreview:active {
+  width: 67.2px;
+  height: 79.2px;
+  /* width: 124px;
+  height: 144px; */
+
+}
+
+
+/* Style buttons */
+#bStyel1{
+  background-image: url(img/1.svg);
+  background-size: contain;
+  background-size: cover;
+  font-family: 'Dancing Script', cursive;
+}
+
+#bStyel2{
+  background-image: url(img/2.svg);
+  background-size: contain;
+  background-size: cover;
+}
+
+#bStyel3{
+  background-image: url(img/3.svg);
+  background-size: contain;
+  background-size: cover;
+}
+
+#bStyel4{
+  background-image: url(img/4.svg);
+  background-size: contain;
+  background-size: cover;
+}
+
+
+/* Styles */
+.style1, .cardStyle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  color: red;
+  background-image: url(img/1.svg);
+  background-size: contain;
+background-size: cover;
+}
+
+.style2 {
+  font-family: 'Style Script', cursive;
+  font-size: 18px;
+  color: green;
+  background-image: url(img/2.svg);
+  background-size: contain;
+background-size: cover;
+}
+
+.style3 {
+  font-family: 'Niconne', cursive;
+  font-size: 18px;
+  color: black;
+  background-image: url(img/3.svg);
+  background-size: contain;
+background-size: cover;
+}
+
+.style4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: black;
+  background-image: url(img/4.svg);
+  background-size: contain;
+background-size: cover;
+}
